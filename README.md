@@ -16,3 +16,5 @@ deploy yolov5_3403_test and libyolov5_3403.so and all dependent third-party so t
 config runtime env and run ./yolov5_3403_test
 
 For more development detail, please follow my personal site on http://marblelog.com.
+
+Thanks for warren@伟 some code copy from https://github.com/warren-wzw/Algorithm-deployment-template-of-each-platform 
