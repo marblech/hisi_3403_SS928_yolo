@@ -14,9 +14,9 @@ void draw_boxes(cv::Mat& image, const std::vector<YOLOV5::bbox_t>& boxes) {
 
 int main(){
     YOLOV5 yolo;
-    std::string model_path = "/app/marble_chen/yolov5_lib_test/model/yolov5s_v62.om";
+    std::string model_path = "model/yolov5s.om";
     std::string model_config = "model/yolov5s.cfg";
-    std::string labels = "model/coco.names";
+    std::string labels = "models/obj.names";
 
     yolo.init(model_path.c_str(), "model_config", "labels");
     
