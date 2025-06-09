@@ -20,8 +20,9 @@ message("OPENCV_INCLUDE_DIRS:${OpenCV_INCLUDE_DIRS}")
 message("ACL_SDK_INCLUDE_DIRS:${ACL_SDK_INCLUDE_DIRS}")
 message("OPENCV_LIBRARIES:${OpenCV_LIBS}")
 
-add_executable(yolov5_3403_test main.cpp)
+add_executable(yolov11_3403_test main.cpp)
 add_library(yolov5_3403 SHARED yolov5_3403.hpp yolov5_3403.cpp)
+add_library(yolov11_3403 SHARED yolov11_3403.hpp yolov11_3403.cpp)
 
-target_link_libraries(yolov5_3403 ${OpenCV_LIBS} ascendcl)
-target_link_libraries(yolov5_3403_test yolov5_3403 ${OpenCV_LIBS} ascendcl  -l:libstdc++fs.a)
+target_link_libraries(yolov5_3403 ${OpenCV_LIBS} ascendcl -l:libstdc++fs.a)
+target_link_libraries(yolov11_3403_test yolov11_3403 ${OpenCV_LIBS} ascendcl  -l:libstdc++fs.a)
