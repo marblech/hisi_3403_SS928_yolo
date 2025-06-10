@@ -18,3 +18,7 @@ config runtime env and run ./yolov5_3403_test
 For more development detail, please follow my personal site on http://marblelog.com.
 
 Thanks for warren@伟 some code copy from https://github.com/warren-wzw/Algorithm-deployment-template-of-each-platform 
+
+Recently, I have completed yolov11n official model covert to NNN npu om format. 
+
+And I have completed yolov11n prediction and processing program demo.
